@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duck Rarity Roll</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Duck Lab</p>
+          <h1>Duck Rarity Roll</h1>
+        </div>
+        <div class="scorebox">
+          <span>Best Score</span>
+          <strong id="best-score">0</strong>
+        </div>
+      </header>
+
+      <main class="game-panel">
+        <section class="duck-card">
+          <div class="duck-stage">
+            <svg id="duck-art" viewBox="0 0 420 320" role="img" aria-label="Generated duck"></svg>
+          </div>
+
+          <div class="duck-info">
+            <div class="rarity-row">
+              <span class="rarity-label">Rarity</span>
+              <span id="rarity-badge" class="rarity-badge common">Common</span>
+            </div>
+
+            <h2 id="duck-name">Puddle Peeper</h2>
+
+            <div class="stats-grid">
+              <div><span>Score</span><strong id="duck-score">0</strong></div>
+              <div><span>Color</span><strong id="duck-color">Cream</strong></div>
+              <div><span>Pattern</span><strong id="duck-pattern">Plain</strong></div>
+              <div><span>Trait</span><strong id="duck-trait">Sunny</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="controls">
+          <button id="roll-btn" class="primary-btn">Roll a Duck</button>
+          <button id="reroll-btn" class="secondary-btn">Lucky Reroll</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
